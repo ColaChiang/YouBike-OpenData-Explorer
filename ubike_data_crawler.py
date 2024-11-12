@@ -13,7 +13,7 @@ def fetch_and_store_youbike_data():
             data = json.loads(response.read().decode())
         
         # 連接 SQLite 資料庫
-        conn = sqlite3.connect("C:/Users/Tosti/Downloads/YouBike_Program/youbike_data_test.db")  # 儲存在本地端
+        conn = sqlite3.connect("C:/Users/Tosti/Desktop/Youbike-Opendata-Explorer/youbike_data.db")  # 儲存在本地端
         cursor = conn.cursor()
 
         # 創建表
